@@ -1,4 +1,4 @@
--- Auto Raging Demon Script for Blox Fruits
+-- Enhanced Auto Raging Demon Script for Blox Fruits
 -- Make sure to use this script responsibly and in accordance with the game's rules.
 
 local player = game.Players.LocalPlayer
@@ -25,6 +25,7 @@ local function useRagingDemon()
         player.Character.HumanoidRootPart.CFrame = target.Character.HumanoidRootPart.CFrame
         -- Code to activate the Raging Demon
         -- Example: player.Character:FindFirstChild("RagingDemon"):Activate()
+        print("Raging Demon activated on " .. target.Name)
     end
 end
 
@@ -34,5 +35,5 @@ while true do
     if target then
         useRagingDemon()
     end
-    wait(1) -- Adjust the time as needed
+    wait(0.5) -- Reduced wait time for faster response
 end
